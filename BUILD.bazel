@@ -1,0 +1,19 @@
+load("@bazel_skylib//:bzl_library.bzl", "bzl_library")
+
+package(default_visibility = ["//visibility:public"])
+
+exports_files([
+    "defs.bzl",
+    "MODULE.bazel",
+    "version.bzl",
+])
+
+bzl_library(
+    name = "bzl_lib",
+    srcs = glob(["**/*.bzl"]),
+    deps = [
+        "@aspect_rules_js//js:defs",
+        "@aspect_rules_js//js:providers",
+        "@rules_rust_wasm_bindgen//:bzl_lib",
+    ],
+)

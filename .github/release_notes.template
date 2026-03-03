@@ -1,7 +1,7 @@
 # {version}
 
 ```python
-bazel_dep(name = "rules_js_rust_wasm_bindgen", version = "{version}")
+bazel_dep(name = "aspect_rules_js_rust_wasm_bindgen", version = "{version}")
 ```
 
-Additional documentation can be found at: https://github.com/UebelAndre/rules_js_rust_wasm_bindgen
+Additional documentation can be found at: https://github.com/UebelAndre/aspect_rules_js_rust_wasm_bindgen

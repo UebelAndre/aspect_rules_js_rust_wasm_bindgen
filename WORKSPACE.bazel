@@ -1,1 +1,1 @@
-workspace(name = "rules_js_rust_wasm_bindgen")
+workspace(name = "aspect_rules_js_rust_wasm_bindgen")
